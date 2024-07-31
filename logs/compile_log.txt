@@ -1,0 +1,88 @@
+[2024-07-30 13:19:42] Starting model compilation for KR260 FPGA
+[2024-07-30 13:19:50] Model compilation completed successfully
+[2024-07-30 13:19:50] Compiled model saved in ./compiled_model
+[2024-07-30 13:19:50] Compilation process finished
+[2024-07-30 13:22:47] Starting model compilation for KR260 FPGA
+[INFO] Namespace(batchsize=1, inputs_shape=None, layout='NHWC', model_files=['./quant_model/quantized_resnet50_grocery.h5'], model_type='tensorflow2', named_inputs_shape=None, out_filename='/tmp/compiled_resnet50_grocery_0x101000016010407_org.xmodel', proto=None)
+[INFO] tensorflow2 model: /workspace/grocery_store_trained/quant_model/quantized_resnet50_grocery.h5
+[INFO] keras version: 2.12.0
+[INFO] Tensorflow Keras model type: functional
+[INFO] parse raw model     :  0%|          | 0/128 [00:00<?, ?it/s]                          [INFO] parse raw model     :100%|██████████| 128/128 [00:00<00:00, 27544.55it/s]             
+[INFO] infer shape (NHWC)  :  0%|          | 0/205 [00:00<?, ?it/s]                          [INFO] infer shape (NHWC)  : 87%|████████▋ | 179/205 [00:00<00:00, 1788.42it/s]              [INFO] infer shape (NHWC)  :100%|██████████| 205/205 [00:00<00:00, 1930.98it/s]              
+[INFO] perform level-0 opt :  0%|          | 0/1 [00:00<?, ?it/s]                            [INFO] perform level-0 opt :100%|██████████| 1/1 [00:00<00:00, 76.06it/s]                    
+[INFO] perform level-1 opt :  0%|          | 0/2 [00:00<?, ?it/s]                            [INFO] perform level-1 opt :100%|██████████| 2/2 [00:00<00:00, 338.21it/s]                   
+[INFO] infer shape (NHWC)  :  0%|          | 0/207 [00:00<?, ?it/s]                          [INFO] infer shape (NHWC)  :100%|██████████| 207/207 [00:00<00:00, 2527.54it/s]              
+[INFO] generate xmodel     :  0%|          | 0/207 [00:00<?, ?it/s]                          [INFO] generate xmodel     : 33%|███▎      | 68/207 [00:00<00:00, 679.42it/s]                [INFO] generate xmodel     : 86%|████████▌ | 177/207 [00:00<00:00, 911.36it/s]               [INFO] generate xmodel     :100%|██████████| 207/207 [00:00<00:00, 801.97it/s]               
+[INFO] dump xmodel ...[INFO] dump xmodel: /tmp/compiled_resnet50_grocery_0x101000016010407_org.xmodel
+[UNILOG][INFO] Compile mode: dpu
+[UNILOG][INFO] Debug mode: null
+[UNILOG][INFO] Target architecture: DPUCZDX8G_ISA1_B4096_0101000016010407
+[UNILOG][INFO] Graph name: model, with op num: 423
+[UNILOG][INFO] Begin to compile...
+[UNILOG][INFO] Total device subgraph number 3, DPU subgraph number 1
+[UNILOG][INFO] Compile done.
+[UNILOG][INFO] The meta json is saved to "/workspace/grocery_store_trained/./compiled_model/meta.json"
+[UNILOG][INFO] The compiled xmodel is saved to "/workspace/grocery_store_trained/./compiled_model/compiled_resnet50_grocery.xmodel"
+[UNILOG][INFO] The compiled xmodel's md5sum is bcf1ee0f1f67c23afd32a9161ed75685, and has been saved to "/workspace/grocery_store_trained/./compiled_model/md5sum.txt"
+**************************************************
+* VITIS_AI Compilation - Xilinx Inc.
+**************************************************
+[2024-07-30 13:22:55] Model compilation completed successfully
+[2024-07-30 13:22:55] Compiled model saved in ./compiled_model
+[2024-07-30 13:22:55] Compilation process finished
+[2024-07-30 13:24:11] Starting model compilation for KR260 FPGA
+[INFO] Namespace(batchsize=1, inputs_shape=None, layout='NHWC', model_files=['./quant_model/quantized_resnet50_grocery.h5'], model_type='tensorflow2', named_inputs_shape=None, out_filename='/tmp/compiled_resnet50_grocery_0x101000016010407_org.xmodel', proto=None)
+[INFO] tensorflow2 model: /workspace/grocery_store_trained/quant_model/quantized_resnet50_grocery.h5
+[INFO] keras version: 2.12.0
+[INFO] Tensorflow Keras model type: functional
+[INFO] parse raw model     :  0%|          | 0/128 [00:00<?, ?it/s]                          [INFO] parse raw model     :100%|██████████| 128/128 [00:00<00:00, 28302.54it/s]             
+[INFO] infer shape (NHWC)  :  0%|          | 0/205 [00:00<?, ?it/s]                          [INFO] infer shape (NHWC)  : 96%|█████████▌| 197/205 [00:00<00:00, 1968.18it/s]              [INFO] infer shape (NHWC)  :100%|██████████| 205/205 [00:00<00:00, 1996.82it/s]              
+[INFO] perform level-0 opt :  0%|          | 0/1 [00:00<?, ?it/s]                            [INFO] perform level-0 opt :100%|██████████| 1/1 [00:00<00:00, 64.12it/s]                    
+[INFO] perform level-1 opt :  0%|          | 0/2 [00:00<?, ?it/s]                            [INFO] perform level-1 opt :100%|██████████| 2/2 [00:00<00:00, 325.05it/s]                   
+[INFO] infer shape (NHWC)  :  0%|          | 0/207 [00:00<?, ?it/s]                          [INFO] infer shape (NHWC)  :100%|██████████| 207/207 [00:00<00:00, 2383.19it/s]              
+[INFO] generate xmodel     :  0%|          | 0/207 [00:00<?, ?it/s]                          [INFO] generate xmodel     : 24%|██▎       | 49/207 [00:00<00:00, 489.71it/s]                [INFO] generate xmodel     : 83%|████████▎ | 172/207 [00:00<00:00, 911.88it/s]               [INFO] generate xmodel     :100%|██████████| 207/207 [00:00<00:00, 778.21it/s]               
+[INFO] dump xmodel ...[INFO] dump xmodel: /tmp/compiled_resnet50_grocery_0x101000016010407_org.xmodel
+[UNILOG][INFO] Compile mode: dpu
+[UNILOG][INFO] Debug mode: null
+[UNILOG][INFO] Target architecture: DPUCZDX8G_ISA1_B4096_0101000016010407
+[UNILOG][INFO] Graph name: model, with op num: 423
+[UNILOG][INFO] Begin to compile...
+[UNILOG][INFO] Total device subgraph number 3, DPU subgraph number 1
+[UNILOG][INFO] Compile done.
+[UNILOG][INFO] The meta json is saved to "/workspace/grocery_store_trained/./compiled_model/meta.json"
+[UNILOG][INFO] The compiled xmodel is saved to "/workspace/grocery_store_trained/./compiled_model/compiled_resnet50_grocery.xmodel"
+[UNILOG][INFO] The compiled xmodel's md5sum is 0d1c840d1166e0c5187cde5ac21d86cd, and has been saved to "/workspace/grocery_store_trained/./compiled_model/md5sum.txt"
+**************************************************
+* VITIS_AI Compilation - Xilinx Inc.
+**************************************************
+[2024-07-30 13:24:19] Model compilation completed successfully
+[2024-07-30 13:24:19] Compiled model saved in ./compiled_model
+[2024-07-30 13:24:19] Compilation process finished
+[2024-07-30 22:12:08] Starting model compilation for KR260 FPGA
+[INFO] Namespace(batchsize=1, inputs_shape=None, layout='NHWC', model_files=['./quant_model/quantized_resnet50_grocery.h5'], model_type='tensorflow2', named_inputs_shape=None, out_filename='/tmp/compiled_resnet50_grocery_0x101000016010407_org.xmodel', proto=None)
+[INFO] tensorflow2 model: /workspace/grocery_store_trained/quant_model/quantized_resnet50_grocery.h5
+[INFO] keras version: 2.12.0
+[INFO] Tensorflow Keras model type: functional
+[INFO] parse raw model     :  0%|          | 0/128 [00:00<?, ?it/s]                          [INFO] parse raw model     :100%|██████████| 128/128 [00:00<00:00, 26114.94it/s]             
+[INFO] infer shape (NHWC)  :  0%|          | 0/205 [00:00<?, ?it/s]                          [INFO] infer shape (NHWC)  : 30%|██▉       | 61/205 [00:00<00:00, 593.78it/s]                [INFO] infer shape (NHWC)  : 90%|█████████ | 185/205 [00:00<00:00, 969.60it/s]               [INFO] infer shape (NHWC)  :100%|██████████| 205/205 [00:00<00:00, 957.58it/s]               
+[INFO] perform level-0 opt :  0%|          | 0/1 [00:00<?, ?it/s]                            [INFO] perform level-0 opt :100%|██████████| 1/1 [00:00<00:00, 73.17it/s]                    
+[INFO] perform level-1 opt :  0%|          | 0/2 [00:00<?, ?it/s]                            [INFO] perform level-1 opt :100%|██████████| 2/2 [00:00<00:00, 310.78it/s]                   
+[INFO] infer shape (NHWC)  :  0%|          | 0/207 [00:00<?, ?it/s]                          [INFO] infer shape (NHWC)  :100%|██████████| 207/207 [00:00<00:00, 2115.50it/s]              
+[INFO] generate xmodel     :  0%|          | 0/207 [00:00<?, ?it/s]                          [INFO] generate xmodel     :  1%|          | 2/207 [00:00<00:11, 17.31it/s]                  [INFO] generate xmodel     : 82%|████████▏ | 169/207 [00:00<00:00, 840.85it/s]               [INFO] generate xmodel     :100%|██████████| 207/207 [00:00<00:00, 661.05it/s]               
+[INFO] dump xmodel ...[INFO] dump xmodel: /tmp/compiled_resnet50_grocery_0x101000016010407_org.xmodel
+[UNILOG][INFO] Compile mode: dpu
+[UNILOG][INFO] Debug mode: null
+[UNILOG][INFO] Target architecture: DPUCZDX8G_ISA1_B4096_0101000016010407
+[UNILOG][INFO] Graph name: model, with op num: 423
+[UNILOG][INFO] Begin to compile...
+[UNILOG][INFO] Total device subgraph number 3, DPU subgraph number 1
+[UNILOG][INFO] Compile done.
+[UNILOG][INFO] The meta json is saved to "/workspace/grocery_store_trained/./compiled_model/meta.json"
+[UNILOG][INFO] The compiled xmodel is saved to "/workspace/grocery_store_trained/./compiled_model/compiled_resnet50_grocery.xmodel"
+[UNILOG][INFO] The compiled xmodel's md5sum is fdb4d208ffa61ee4b1372e56e7a14a82, and has been saved to "/workspace/grocery_store_trained/./compiled_model/md5sum.txt"
+**************************************************
+* VITIS_AI Compilation - Xilinx Inc.
+**************************************************
+[2024-07-30 22:12:16] Model compilation completed successfully
+[2024-07-30 22:12:16] Compiled model saved in ./compiled_model
+[2024-07-30 22:12:16] Compilation process finished

@@ -1,0 +1,8 @@
+{
+    "lib": "libvart-dpu-runner.so",
+    "filename": "compiled_resnet50_grocery.xmodel",
+    "kernel": [
+        "subgraph_quant_conv1_conv"
+    ],
+    "target": "DPUCZDX8G_ISA1_B4096_0101000016010407"
+}
