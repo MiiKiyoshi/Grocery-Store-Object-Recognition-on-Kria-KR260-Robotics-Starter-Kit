@@ -54,7 +54,7 @@ This project demonstrates the implementation of an object recognition system for
 
 This project uses the "Grocery Store Dataset" from Kaggle. Due to size constraints, the dataset is not included in this repository. Please follow these steps to set up the dataset:
 
-1. Download the dataset from Kaggle: [Grocery Store Dataset](https://www.kaggle.com/datasets/dataset-link) (Replace with the actual Kaggle link)
+1. Download the dataset from Kaggle: [Grocery Store Dataset (kaggle.com)](https://www.kaggle.com/datasets/validmodel/grocery-store-dataset/data)
 2. Extract the downloaded zip file
 3. Place the contents of the `dataset` folder from the extracted files into the `grocery_store_dataset/original/` directory in this project
 
